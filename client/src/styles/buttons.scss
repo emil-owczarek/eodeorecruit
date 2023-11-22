@@ -1,0 +1,104 @@
+
+.info-container {
+  display: flex;
+  align-items: center;
+}
+
+
+.buttons {
+  display: flex;
+  align-items: center;
+
+  & button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  &__edit {
+    border: 1.5px solid rgb(141, 181, 145);
+    color: rgb(255, 255, 255);
+    background-color: #5dbea3;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:hover {
+      background-color: #33b249;
+    }
+
+    &:active {
+      background-color: #5adbb5;
+    }
+  }
+
+  &__delete {
+    background-color: #be5d5d;
+    border: 1.5px solid rgb(181, 141, 141);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+
+    &:hover {
+      background-color: #b23333;
+      color: white;
+    }
+
+    &:active {
+      background-color: #db5a5a;
+      color: (255, 255, 255);
+    }
+  }
+
+  &__create {
+    border: 1.5px solid rgb(187, 187, 187);
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+
+    &:hover {
+      background-color: rgb(129, 129, 129);
+      color: white;
+    }
+
+    &:active {
+      background-color: #5dbea3;
+      border-color: #5dbea3;
+      color: (255, 255, 255);
+    }
+  }
+
+  &__signout {
+    border: 1.5px solid rgb(187, 187, 187);
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+
+    &:hover {
+      background-color: rgb(129, 129, 129);
+      color: white;
+    }
+
+    &:active {
+      border: 1.5px solid #be5d5d;
+      background-color: #be5d5d;
+      color: (255, 255, 255);
+    }
+  }
+
+  &__note {
+    background-color: rgb(255, 210, 143);
+    border: 1px solid rgb(255, 210, 143);
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: rgb(233, 169, 73);
+      border: 1px solid rgb(233, 169, 73);
+      text-transform: uppercase;
+    }
+
+    &:active {
+      background-color: rgb(228, 196, 148);
+      border: 1px solid rgb(228, 196, 148);
+      text-transform: uppercase;
+    }
+  }
+}
+

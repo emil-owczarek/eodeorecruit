@@ -1,0 +1,11 @@
+.list-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+
+    &__title {
+      padding: 10px;
+    }
+  }
+  

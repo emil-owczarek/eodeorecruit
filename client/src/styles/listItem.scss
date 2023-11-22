@@ -1,0 +1,36 @@
+.list-item {
+  width: 100%;
+  margin: 10px 0;
+  border-bottom: 1px solid rgb(206, 206, 206);
+  display: flex;
+  justify-content: space-between;
+
+  &__icon {
+    width: 50px;
+    padding: 5px;
+    background-size: contain;
+    margin: 10px;
+    border: 1px solid transparent;
+
+    &.selected {
+      border-color: gray;
+    }
+  }
+
+  &__job-title {
+    width: 300px;
+    text-decoration: none;
+
+    &:visited {
+      color: blue;
+    }
+  }
+
+  &__status-dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+  }
+}

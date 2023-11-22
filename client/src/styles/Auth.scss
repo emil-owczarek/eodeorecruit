@@ -1,0 +1,80 @@
+@mixin background-with-image($image-path) {
+  margin: 11px 0;
+  padding: 12px 16px;
+  background-image: url(#{$image-path});
+  background-size: 5%;
+  background-position: 5% center;
+  background-repeat: no-repeat;
+  padding-left: 60px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid rgb(196, 196, 196);
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+
+  &__box {
+    width: 400px;
+    overflow: hidden;
+    border: 1px solid rgb(219, 219, 219);
+    background-color: white;
+    border-radius: 10px;
+  }
+}
+
+.auth {
+  &__title {
+    align-self: center;
+  }
+
+  &__submit-button {
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1.5px solid rgb(230, 232, 236);
+    background-color: black;
+    margin-top: 36px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(114, 114, 114);
+    }
+
+    &:active {
+      color: black;
+      background-color: rgb(255, 255, 255);
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    padding: 20px;
+  }
+
+  &__options-button {
+    width: 50%;
+    border: none;
+    padding: 10px;
+    color: rgb(35, 38, 47);
+  }
+
+  &__email-input {
+    @include background-with-image("../../public/user.webp");
+  }
+
+  &__password-input {
+    &--1 {
+      @include background-with-image("../../public/confirm-password.webp");
+    }
+
+    &--2 {
+      @include background-with-image("../../public/password.webp");
+    }
+  }
+}

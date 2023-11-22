@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: papayawhip;
+  display: flex;
+  justify-content: center;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* elements */
+@import "buttons.scss";
+@import "modal.scss";
+
+/* components */
+@import "Auth.scss";
+@import "App.scss";
+@import "listHeader.scss";
+@import "listItem.scss";
